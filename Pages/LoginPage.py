@@ -9,10 +9,10 @@ driver.get ("https://training.pfms.gov.in/SitePages/Users/LoginDetails/Login.asp
 
 
 #Test case = 1 Create Proposal
-
-driver.find_element(By.XPATH,"//input[@id='UserName']").send_keys("DLSFDU02")
-driver.find_element(By.XPATH,"//input[@id='Password']").send_keys("root@123")
+def Login():
+    driver.find_element(By.XPATH,"//input[@id='UserName']").send_keys("DLSFDU02")
+    driver.find_element(By.XPATH,"//input[@id='Password']").send_keys("root@123")
 # here need to enter captcha manually
-time.sleep(5)
-driver.find_element(By.XPATH,"//input[@id='ctl00_cphBody_btnLoginButton']").click()
+    time.sleep(5)
+    driver.find_element(By.XPATH,"//input[@id='ctl00_cphBody_btnLoginButton']").click()
 time.sleep(2)
