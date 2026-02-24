@@ -16,3 +16,5 @@ def Login():
     time.sleep(5)
     driver.find_element(By.XPATH,"//input[@id='ctl00_cphBody_btnLoginButton']").click()
 time.sleep(2)
+
+test data for automate.xlsx
