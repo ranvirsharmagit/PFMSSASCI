@@ -1,4 +1,4 @@
-from Pages.login_page import LoginPage
+from Pages.Login_Pages import LoginPage
 from Pages.dashboard_page import DashboardPage
 
 def test_navigation(driver):
@@ -7,6 +7,6 @@ def test_navigation(driver):
     dashboard = DashboardPage(driver)
 
     login.load()
-    login.login("DLSFDU02", "root@123")
+    login.login("DLSFDU02", "Root@123")
 
     dashboard.navigate_to_create_proposal()
