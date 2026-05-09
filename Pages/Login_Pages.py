@@ -10,9 +10,7 @@ class LoginPage:
         self.login_button = (By.ID, "ctl00_cphBody_btnLoginButton")
 
     def load(self):
-        self.driver.get(
-            "https://training.pfms.gov.in/SitePages/Users/LoginDetails/Login.aspx"
-        )
+        self.driver.get("https://training.pfms.gov.in/SitePages/Users/LoginDetails/Login.aspx")
 
     def login(self, username, password):
         self.driver.find_element(*self.username).send_keys(username)

@@ -1,4 +1,4 @@
-from pages.login_page import LoginPage
+from Pages.Login_Pages import LoginPage
 
 def test_login(driver):
 
